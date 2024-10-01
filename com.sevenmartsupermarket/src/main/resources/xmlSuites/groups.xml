@@ -1,0 +1,17 @@
+<suite name="grouping" thread_count="10" parallel="classes">
+	<listeners>
+		<listener class-name="com.sevenmartsupermarket.listeners.ExtentReporter"></listener>
+	</listeners>
+	<test name="executing groups">
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.sevenmartsupermarket.tests.HomeTest"></class>
+			<class name="com.sevenmartsupermarket.tests.LoginTest"></class>
+			<class name="com.sevenmartsupermarket.tests.SubCategoryTest"></class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,20 @@
+<suite name="sevenrmart" thread_count="10" parallel="classes">
+	<listeners>
+		<listener class-name="com.sevenmartsupermarket.listeners.ExtentReporter"></listener>
+	</listeners>
+	<test name="testone">
+		<classes>
+			<class name="com.sevenmartsupermarket.tests.HomeTest"></class>
+		</classes>
+	</test>
+	<test name="testtwo">
+		<classes>
+			<class name="com.sevenmartsupermarket.tests.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="testthree">
+		<classes>
+			<class name="com.sevenmartsupermarket.tests.AdminUserTest"></class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [CrossBrowserExecution]">
+  <listeners>
+    <listener class-name="com.sevenmartsupermarket.listeners.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="CrossBrowserExecutionInEdge(failed)">
+    <classes>
+      <class name="com.sevenmartsupermarket.tests.LoginTest">
+        <methods>
+          <include name="initilizeBrowser"/>
+          <include name="terminateBrowser"/>
+          <include name="verifyAdminLogin"/>
+        </methods>
+      </class> <!-- com.sevenmartsupermarket.tests.LoginTest -->
+    </classes>
+  </test> <!-- CrossBrowserExecutionInEdge(failed) -->
+  <test thread-count="5" parallel="tests" name="CrossBrowserExecutionInFirefox(failed)">
+    <classes>
+      <class name="com.sevenmartsupermarket.tests.LoginTest">
+        <methods>
+          <include name="initilizeBrowser"/>
+          <include name="terminateBrowser"/>
+          <include name="verifyAdminLogin"/>
+        </methods>
+      </class> <!-- com.sevenmartsupermarket.tests.LoginTest -->
+    </classes>
+  </test> <!-- CrossBrowserExecutionInFirefox(failed) -->
+</suite> <!-- Failed suite [CrossBrowserExecution] -->
