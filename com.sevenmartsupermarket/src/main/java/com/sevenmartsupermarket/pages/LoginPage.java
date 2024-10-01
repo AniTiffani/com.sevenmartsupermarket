@@ -56,6 +56,7 @@ public class LoginPage {
 		clickOnSignInButton();
 		return new HomePage(driver);
 	}
+	
 	public HomePage login()
 	{
 		String userName = properties.getProperty("username");
