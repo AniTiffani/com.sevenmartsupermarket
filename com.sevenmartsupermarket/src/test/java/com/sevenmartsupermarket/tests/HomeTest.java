@@ -35,9 +35,9 @@ public class HomeTest extends Base {
 		loginpage = new LoginPage(driver);
 		homepage = new HomePage(driver);
 		loginpage.login("Akhil", "User123");
-		System.out.println("print: "+homepage.getProfileName());
-		//String profileName = homepage.getProfileName();
-		//System.out.println(profileName);	
+		//System.out.println("print: "+homepage.getProfileName());
+		String profileName = homepage.getProfileName();
+		System.out.println(profileName);	
 	}
 	
 	@Test
